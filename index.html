@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav1">Ketan Sharma</div>
+            <div class="nav2">
+                <ul>
+                    <li class="hideonmobile">Home</li>
+                    <li class="hideonmobile">About Me</li>
+                    <li class="hideonmobile">Projects</li>
+                    <li class="hideonmobile">Contact Me</li>
+                    <li onclick=showSidebar()><i class="ri-menu-line"></i></li>
+                </ul>
+            </div>
+            <div class="nav2 sidebar">
+                <ul>
+                    <li onclick=closeSidebar()><i class="ri-close-large-line"></i></li>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="headline">
+            TO-DO LIST
+        </div>
+        <div class="quote">
+            Organize your tasks. Stay productive.
+        </div>
+        <div class="input">
+            <div class="menu"><i class="ri-list-check"></i></div>
+            <input type="text" placeholder="What do you need to do?" class="input1">
+            <div class="plus"><i class="ri-add-large-line"></i></div>
+        </div>
+        <div class="stats">
+            <div id="stat1" class="stat">
+                <div class="icon" id="icon1"><i class="ri-list-check-2"></i></div>
+                <div class="text">Total Tasks</div>
+                <div class="number num1">5</div>
+            </div>
+            <div id="stat2" class="stat">
+                <div class="icon" id="icon2"><i class="ri-list-check-2"></i></div>
+                <div class="text">Pending</div>
+                <div class="number num2">2</div>
+            </div>
+            <div id="stat3" class="stat">
+                <div class="icon" id="icon3"><i class="ri-task-line"></i></div>
+                <div class="text">Completed</div>
+                <div class="number num3">3</div>
+            </div>
+            <div id="stat4" class="stat">
+                <div class="icon" id="icon4"><i class="ri-progress-2-line"></i></div>
+                <div class="text">Progress</div>
+                <div class="number num4">60%</div>
+            </div>
+        </div>
+        <div class="tasks">
+            <div class="today task">
+                <div class="heading">
+                    <div class="head-icon ">
+                        <i class="ri-sun-line"></i>
+                    </div>
+                    <div class="head-text">
+                        Today's Tasks
+                    </div>
+                    <div class="head-count todaycount">
+                        2
+                    </div>
+                </div>
+                <div class="task-list todaylist">
+                    <div class="task-indi">
+                        <div class="checkbox checkbox1"><i class="ri-checkbox-blank-circle-line"></i></div>
+                        <div class="indi-text head-text">BreakFast</div>
+                        <div class="delete"><i class="ri-delete-bin-6-line"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="compl task">
+                <div class="heading">
+                    <div class="head-icon head2">
+                        <i class="ri-check-line"></i>
+                    </div>
+                    <div class="head-text">
+                        Completed Tasks
+                    </div>
+                    <div class="head-count head2 complecount">
+                        2
+                    </div>
+                </div>
+                <div class="task-list complelist">
+                    <div class="task-indi">
+                        <div class="checkbox checkbox2"><i class="ri-checkbox-circle-line"></i></div>
+                        <div class="indi-text head-text  comple-text">BreakFast</div>
+                        <div class="delete"><i class="ri-delete-bin-6-line"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
